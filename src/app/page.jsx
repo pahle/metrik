@@ -2,13 +2,10 @@ import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { Keyboard } from '@/components/keyboard'
 import { Link } from '@/components/link'
 import { LinkedAvatars } from '@/components/linked-avatars'
 import { LogoCloud } from '@/components/logo-cloud'
-import { LogoCluster } from '@/components/logo-cluster'
 import { LogoTimeline } from '@/components/logo-timeline'
-import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
 import { Screenshot } from '@/components/screenshot'
 import { Testimonials } from '@/components/testimonials'
@@ -87,9 +84,9 @@ function FeatureSection() {
 function BentoSection() {
   return (
     <Container>
-      <Subheading>Sales</Subheading>
+      <Subheading>Portfolio</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        Know more about your customers than they do.
+        Hasil karya kami yang luar biasa.
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
@@ -98,9 +95,9 @@ function BentoSection() {
           title="Get perfect clarity"
           description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
           graphic={
-            <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="h-80 bg-[url(/screenshots/screenshot.jpg)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
           }
-          fade={['bottom']}
+          // fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
         />
         <BentoCard
@@ -108,9 +105,9 @@ function BentoSection() {
           title="Undercut your competitors"
           description="With our advanced data mining, you’ll know which companies your leads are talking to and exactly how much they’re being charged."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
+            <div className="h-80 bg-[url(/screenshots/screenshot2.jpg)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
           }
-          fade={['bottom']}
+          // fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
@@ -118,9 +115,7 @@ function BentoSection() {
           title="Built for power users"
           description="It’s never been faster to cold email your entire contact list using our streamlined keyboard shortcuts."
           graphic={
-            <div className="flex size-full pl-10 pt-10">
-              <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
-            </div>
+            <div className="h-80 bg-[url(/screenshots/screenshot3.jpg)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
           }
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
@@ -128,14 +123,18 @@ function BentoSection() {
           eyebrow="Source"
           title="Get the furthest reach"
           description="Bypass those inconvenient privacy laws to source leads from the most unexpected places."
-          graphic={<LogoCluster />}
+          graphic={
+            <div className="h-80 bg-[url(/screenshots/screenshot3.jpg)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+          }
           className="lg:col-span-2"
         />
         <BentoCard
           eyebrow="Limitless"
           title="Sell globally"
           description="Radiant helps you sell in locations currently under international embargo."
-          graphic={<Map />}
+          graphic={
+            <div className="h-80 bg-[url(/screenshots/screenshot3.jpg)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+          }
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
       </div>
