@@ -209,11 +209,11 @@ export default function Home() {
         </Container>
         <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-32">
           <FeatureSection />
+          <Testimonials />
           <BentoSection />
         </div>
         <DarkBentoSection />
       </main>
-      <Testimonials />
       <Footer />
     </div>
   )
