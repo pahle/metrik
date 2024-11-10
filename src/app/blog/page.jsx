@@ -150,6 +150,8 @@ async function Posts({ page, category }) {
     category,
   )
 
+  console.log(posts)
+
   if (posts.length === 0 && (page > 1 || category)) {
     notFound()
   }
