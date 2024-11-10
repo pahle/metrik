@@ -61,13 +61,23 @@ function FeatureSection() {
     <div className="overflow-hidden">
       <Container className="pb-24">
         <Heading as="h2" className="max-w-3xl">
-          A snapshot of your entire sales pipeline.
+          Konsisten membangun hunian ramah lingkungan.
         </Heading>
+        <p className="mt-8 max-w-2xl text-xl/7 text-gray-950/75">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum beatae
+          fuga nesciunt et vel? Dolore.
+        </p>
         <Screenshot
           width={1216}
           height={768}
-          src="/screenshots/app.png"
-          className="mt-16 h-[36rem] sm:h-auto sm:w-[76rem]"
+          src="/screenshot.jpg"
+          className="mt-16 hidden h-[36rem] sm:h-auto sm:w-[76rem] md:block"
+        />
+        <Screenshot
+          width={608}
+          height={768}
+          src="/features.jpg"
+          className="mt-16 block h-[36rem] sm:h-auto sm:w-[76rem] md:hidden"
         />
       </Container>
     </div>
@@ -194,7 +204,7 @@ export default function Home() {
       <Hero />
       <main>
         <Container>
-          <h1 className='text-center text-lg mb-10'>Dipercaya oleh:</h1>
+          <h1 className="mb-10 text-center text-lg">Dipercaya oleh:</h1>
           <LogoCloud />
         </Container>
         <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-32">
