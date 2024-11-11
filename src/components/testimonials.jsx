@@ -17,21 +17,21 @@ import { Heading, Subheading } from './text'
 
 const testimonials = [
   {
-    img: '/testimonials/tina-yards.jpg',
+    img: '/design.jpg',
     name: 'Tina Yards',
     title:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio suntea ullam, tenetur laborum minus quisquam explicabo unde repellat?',
     quote: 'Design',
   },
   {
-    img: '/testimonials/conor-neville.jpg',
+    img: '/engineer.jpg',
     name: 'Conor Neville',
     title:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio suntea ullam, tenetur laborum minus quisquam explicabo unde repellat?',
     quote: 'Engineering',
   },
   {
-    img: '/testimonials/amy-chase.jpg',
+    img: '/construction.jpg',
     name: 'Amy Chase',
     title:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio suntea ullam, tenetur laborum minus quisquam explicabo unde repellat?',
@@ -39,21 +39,21 @@ const testimonials = [
     quote: 'Konstruksi',
   },
   {
-    img: '/testimonials/veronica-winton.jpg',
+    img: '/renovation.jpg',
     name: 'Veronica Winton',
     title:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio suntea ullam, tenetur laborum minus quisquam explicabo unde repellat?',
     quote: 'Renovasi',
   },
   {
-    img: '/testimonials/dillon-lenora.jpg',
+    img: '/survey.jpg',
     name: 'Dillon Lenora',
     title:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio suntea ullam, tenetur laborum minus quisquam explicabo unde repellat?',
     quote: 'Survey',
   },
   {
-    img: '/testimonials/harriet-arron.jpg',
+    img: '/consultation.jpg',
     name: 'Harriet Arron',
     title:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio suntea ullam, tenetur laborum minus quisquam explicabo unde repellat?',
