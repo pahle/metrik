@@ -165,7 +165,7 @@ function CallToAction() {
   )
 }
 
-export function Testimonials() {
+export function Services() {
   let scrollRef = useRef(null)
   let { scrollX } = useScroll({ container: scrollRef })
   let [setReferenceWindowRef, bounds] = useMeasure()

@@ -8,7 +8,8 @@ import { LogoCloud } from '@/components/logo-cloud'
 import { LogoTimeline } from '@/components/logo-timeline'
 import { Navbar } from '@/components/navbar'
 import { Screenshot } from '@/components/screenshot'
-import { Testimonials } from '@/components/testimonials'
+import { Services } from '@/components/services'
+import { Testimonial } from '@/components/testimonial'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 
@@ -208,8 +209,9 @@ export default function Home() {
         </Container>
         <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-32">
           <FeatureSection />
-          <Testimonials />
+          <Services />
           <BentoSection />
+          <Testimonial />
         </div>
         <DarkBentoSection />
       </main>
