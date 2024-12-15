@@ -12,8 +12,8 @@ import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 const links = [
+  { href: '/about', label: 'About' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/company', label: 'Company' },
   { href: '/blog', label: 'Blog' },
   { href: '/login', label: 'Login' },
 ]
@@ -84,14 +84,14 @@ export function Navbar({ banner }) {
             <PlusGridItem className="py-3">
               <Link href="/" title="Home">
                 {/* <Logo className="h-9" /> */}
-                <img src="/metrik.png" alt="Logo" className='h-6' />
+                <img src="/laki.png" alt="Logo" className='sm:w-36 w-24 px-2' />
               </Link>
             </PlusGridItem>
-            {banner && (
+            {/* {banner && (
               <div className="relative hidden items-center py-3 lg:flex">
                 {banner}
               </div>
-            )}
+            )} */}
           </div>
           <DesktopNav />
           <MobileNavButton />

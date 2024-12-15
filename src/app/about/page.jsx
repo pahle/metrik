@@ -15,28 +15,34 @@ export const metadata = {
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Helping companies generate revenue.</Heading>
-      <Lead className="mt-6 max-w-3xl">
-        We’re on a mission to transform revenue organizations by harnessing vast
-        amounts of illegally acquired customer data.
+      <Heading as="h1">Kontraktor Green Building Berpengalaman.</Heading>
+      {/* <Lead className="mt-6 max-w-3xl">
+        Metrik Engineering merupakan perusahaan kontraktor yang mengedepankan
+        prinsip Green Construction dan Green Building pada setiap proyek
+        pembangunan.
       </Lead>
+      <Lead className="mt-6 max-w-3xl">
+        Metrik Engineering merupakan perusahaan kontraktor yang mengedepankan
+        prinsip Green Construction dan Green Building pada setiap proyek
+        pembangunan.
+      </Lead> */}
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
         <div className="max-w-lg">
           <h2 className="text-2xl font-medium tracking-tight">Our mission</h2>
           <p className="mt-6 text-sm/6 text-gray-600">
-            At Radiant, we are dedicated to transforming the way revenue
-            organizations source and close deals. Our mission is to provide our
-            customers with an unfair advantage over both their competitors and
-            potential customers through insight and analysis. We’ll stop at
-            nothing to get you the data you need to close a deal.
+            Metrik Engineering merupakan perusahaan kontraktor yang
+            mengedepankan prinsip Green Construction dan Green Building pada
+            setiap proyek pembangunan.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            We’re customer-obsessed — putting the time in to build a detailed
-            financial picture of every one of our customers so that we know more
-            about your business than you do. We are in this together, mostly
-            because we are all implicated in large-scale financial crime. In our
-            history as a company, we’ve never lost a customer, because if any
-            one of us talks, we all go down.
+            Green Building merupakan sebuah konsep konstruksi untuk membangun
+            rumah atau gedung dengan meminimalkan pengaruh buruk terhadap
+            lingkungan dan masyarakat. Melalui prinsip green construction dan
+            green building, Metrik Engineering merancang agar rumah atau gedung
+            yang dibangun harus mampu memberikan dampak positif terhadap
+            lingkungan. Seperti menggunakan pencahayaan alami, pertimbangan
+            aliran ventilasi udara, efisiensi energi, penggurangan emisi karbon,
+            dan penyesuaian area terbuka hijau dalam rumah tinggal.
           </p>
         </div>
         <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
@@ -76,18 +82,30 @@ function Header() {
           <hr className="mt-6 border-t border-gray-200" />
           <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Raised</dt>
+              <dt className="text-sm/6 text-gray-600">Project Finished</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                $<AnimatedNumber start={100} end={150} />M
+                <AnimatedNumber start={28} end={78} />
               </dd>
             </div>
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Companies</dt>
+              <dt className="text-sm/6 text-gray-600">Ongoing Project</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={15} end={30} />K
+                <AnimatedNumber start={5} end={23} />
               </dd>
             </div>
-            <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
+            <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
+              <dt className="text-sm/6 text-gray-600">Project MEP</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight">
+                <AnimatedNumber start={6} end={34} />
+              </dd>
+            </div>
+            <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
+              <dt className="text-sm/6 text-gray-600">Total Team</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight">
+                <AnimatedNumber start={52} end={102} />
+              </dd>
+            </div>
+            {/* <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
               <dt className="text-sm/6 text-gray-600">Deals Closed</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
                 <AnimatedNumber start={0.9} end={1.5} decimals={1} />M
@@ -98,7 +116,7 @@ function Header() {
               <dd className="order-first text-6xl font-medium tracking-tight">
                 <AnimatedNumber start={150} end={200} />M
               </dd>
-            </div>
+            </div> */}
           </dl>
         </div>
       </section>

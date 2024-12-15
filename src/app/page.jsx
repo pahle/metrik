@@ -1,7 +1,7 @@
 import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
-import { Footer } from '@/components/footer'
+import { Gradient } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { LinkedAvatars } from '@/components/linked-avatars'
 import { LogoCloud } from '@/components/logo-cloud'
@@ -12,6 +12,7 @@ import { Services } from '@/components/services'
 import { Testimonial } from '@/components/testimonial'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
+import Image from 'next/image'
 
 export const metadata = {
   description:
@@ -23,6 +24,17 @@ function Hero() {
     <div className="relative">
       {/* <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" /> */}
       <Container className="relative">
+        <div className="absolute left-0 -z-10 h-full w-full bg-gradient-to-br from-white from-[60%] to-transparent" />
+        <div className="absolute -bottom-36 left-0 -z-10 h-full w-full bg-gradient-to-t from-white from-[1%] to-transparent" />
+        <Image
+          src="/grid.jpg"
+          width={100}
+          height={100}
+          alt="grid"
+          className="absolute left-0 -z-20 w-[1200px] object-cover opacity-50 md:w-full"
+          unoptimized
+        />
+
         <Navbar
           banner={
             <Link
@@ -204,7 +216,7 @@ export default function Home() {
       <Hero />
       <main>
         <Container>
-          <h1 className="mb-10 text-center text-lg">Dipercaya oleh:</h1>
+          <h1 className="mb-10 mt-10 text-center text-lg">Dipercaya oleh:</h1>
           <LogoCloud />
         </Container>
         <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-32">
@@ -213,9 +225,9 @@ export default function Home() {
           <BentoSection />
           <Testimonial />
         </div>
-        <DarkBentoSection />
+        {/* <DarkBentoSection /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
